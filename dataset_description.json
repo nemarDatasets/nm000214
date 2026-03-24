@@ -1,0 +1,47 @@
+{
+	"Name": "c-VEP dataset from Thielen et al. (2021)",
+	"BIDSVersion": "1.9.0",
+	"HEDVersion": "8.4.0",
+	"DatasetType": "derivative",
+	"License": "CC0-1.0",
+	"Authors": [
+		"J Thielen",
+		"P Marsman",
+		"J Farquhar",
+		"P Desain"
+	],
+	"Funding": [
+		"NWO/TTW Takeoff Grant No. 14054",
+		"International ALS Association and Dutch ALS Foundation Grant Nos. ATC20610 and 2017-57"
+	],
+	"EthicsApprovals": [
+		"Approved by the local ethical committee of the Faculty of Social Sciences of Radboud University"
+	],
+	"ReferencesAndLinks": [
+		"https://doi.org/10.34973/9txv-z787",
+		"10.1088/1741-2552/ab4057"
+	],
+	"GeneratedBy": [
+		{
+			"CodeURL": "https://github.com/NeuroTechX/moabb",
+			"Name": "moabb",
+			"Description": "Mother of All BCI Benchmarks",
+			"Version": "1.5.0"
+		}
+	],
+	"SourceDatasets": [
+		{
+			"DOI": "10.34973/9txv-z787",
+			"URL": "https://doi.org/10.34973/9txv-z787"
+		}
+	],
+	"Keywords": [
+		"brain\u2013computer interface (BCI)",
+		"electroencephalography (EEG)",
+		"code-modulated visual evoked potentials (cVEPs)",
+		"reconvolution",
+		"zero training",
+		"spread spectrum communication"
+	],
+	"PublicationYear": 2021
+}
