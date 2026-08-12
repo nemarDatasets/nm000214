@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "c-VEP dataset from Thielen et al. (2021)",
-  "description": "A code-modulated visual evoked potential (cVEP) brain-computer interface dataset from 30 healthy participants performing an offline BCI task with a calculator grid stimulus. This derivative dataset demonstrates a calibration-free approach that progressively reduces training data requirements while maintaining classification performance, ultimately achieving zero-training BCI operation through neural encoding models and reconvolution techniques.",
-  "methods_description": "EEG data acquired at 512 Hz from 8 electrodes (Fpz, Iz, O1, O2, Oz, POz, T7, T8) using Biosemi ActiveTwo hardware with sintered Ag/AgCl active electrodes. Participants completed 5 blocks of 20 trials each (100 trials total) with 31.5 s trial duration using a 4×5 calculator grid stimulus. Stimuli were luminance-modulated pseudo-random Gold codes (126-bit sequences, 2.1 s duration) presented at 60 Hz. Data preprocessed with 2-30 Hz Butterworth filtering and downsampled to 120 Hz. Classification employed template-matching with reconvolution encoding model decomposing responses into linear sums of individual event responses.",
+  "description": "A code-modulated visual evoked potential (cVEP) brain-computer interface dataset from 30 healthy participants performing an offline BCI task with a calculator grid stimulus. This derivative dataset demonstrates a calibration-free approach that progressively reduces training data requirements while maintaining classification performance, ultimately achieving zero-training BCI operation through neural encoding models. The study validates the feasibility of plug-and-play BCI systems using only 8 non-invasive EEG electrodes.",
+  "methods_description": "EEG data acquired at 512 Hz from 8 electrodes (Fpz, Iz, O1, O2, Oz, POz, T7, T8) using Biosemi ActiveTwo hardware with sintered Ag/AgCl active electrodes. Stimuli consisted of luminance-modulated pseudo-random Gold codes (126-bit sequences) presented on an iPad Pro at 60 Hz. Offline experiment: 30 participants completed 5 blocks of 20 trials each (100 trials total) with 31.5 s trial duration using a 4×5 calculator grid. Data preprocessed with 2-30 Hz Butterworth filtering and downsampled to 120 Hz. Classification employed template-matching with reconvolution encoding model decomposing responses into linear sums of individual event responses.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -16,30 +16,25 @@
     {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "electroencephalography"
     },
     {
-      "term": "Evoked Potentials, Visual",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
+      "term": "evoked potentials, visual"
     },
     {
       "term": "code-modulated visual evoked potentials"
     },
     {
-      "term": "zero training"
+      "term": "zero-training BCI"
     },
     {
-      "term": "encoding model"
+      "term": "encoding models"
     },
     {
-      "term": "reconvolution"
+      "term": "calibration-free BCI"
     }
   ],
   "related_identifiers": [
@@ -71,9 +66,9 @@
   ],
   "funding_references": [
     {
-      "funder_name": "NWO",
+      "funder_name": "NWO/TTW",
       "award_number": "14054",
-      "award_title": "TTW Takeoff Grant"
+      "award_title": "Takeoff Grant"
     },
     {
       "funder_name": "International ALS Association",
@@ -103,5 +98,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "30d15856367fb2184754a187267cacb98ff0170f999d9428e719309ed5ccb394"
+  "source_hash": "17704afd413c9e73a1314a83d5a5315d3d189a528f5b9ecb8aeec66df041c246"
 }
