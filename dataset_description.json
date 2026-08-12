@@ -36,7 +36,7 @@
     }
   ],
   "Keywords": [
-    "brain–computer interface (BCI)",
+    "brain\u2013computer interface (BCI)",
     "electroencephalography (EEG)",
     "code-modulated visual evoked potentials (cVEPs)",
     "reconvolution",
@@ -45,5 +45,5 @@
   ],
   "PublicationYear": 2021,
   "DatasetDOI": "10.82901/nemar.nm000214",
-  "Version": "1.0.1"
+  "Version": "1.0.2"
 }
