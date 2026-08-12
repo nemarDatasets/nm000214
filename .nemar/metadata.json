@@ -1,12 +1,47 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "c-VEP dataset from Thielen et al. (2021)",
+  "description": "A code-modulated visual evoked potential (cVEP) brain-computer interface dataset from 30 healthy participants performing an offline BCI task with a calculator grid stimulus. This derivative dataset demonstrates a calibration-free approach that progressively reduces training data requirements while maintaining classification performance, ultimately achieving zero-training BCI operation through neural encoding models and reconvolution techniques.",
+  "methods_description": "EEG data acquired at 512 Hz from 8 electrodes (Fpz, Iz, O1, O2, Oz, POz, T7, T8) using Biosemi ActiveTwo hardware with sintered Ag/AgCl active electrodes. Participants completed 5 blocks of 20 trials each (100 trials total) with 31.5 s trial duration using a 4×5 calculator grid stimulus. Stimuli were luminance-modulated pseudo-random Gold codes (126-bit sequences, 2.1 s duration) presented at 60 Hz. Data preprocessed with 2-30 Hz Butterworth filtering and downsampled to 120 Hz. Classification employed template-matching with reconvolution encoding model decomposing responses into linear sums of individual event responses.",
+  "license": "CC0-1.0",
+  "dataset_type": "derivative",
   "authors": {
     "J Thielen": {},
     "P Marsman": {},
     "J Farquhar": {},
     "P Desain": {}
   },
+  "keywords": [
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Evoked Potentials, Visual",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
+    },
+    {
+      "term": "code-modulated visual evoked potentials"
+    },
+    {
+      "term": "zero training"
+    },
+    {
+      "term": "encoding model"
+    },
+    {
+      "term": "reconvolution"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.34973/9txv-z787",
@@ -24,13 +59,13 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000214",
-      "identifier_type": "URL",
+      "identifier": "10.1088/1741-2552/abecef",
+      "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "10.1088/1741-2552/abecef",
-      "identifier_type": "DOI",
+      "identifier": "https://nemar.org/dataset/nm000214",
+      "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     }
   ],
@@ -49,49 +84,24 @@
       "award_number": "2017-57"
     }
   ],
-  "title": "c-VEP dataset from Thielen et al. (2021)",
-  "license": "CC0-1.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "1.4 GB (151 files)"
+    "3.2 GB (301 files)"
   ],
   "formats": [
     ".bdf",
+    ".gdf",
     ".json",
+    ".loc",
+    ".mat",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "description": "A code-modulated visual evoked potential (cVEP) brain-computer interface dataset from 30 healthy participants performing offline and online spelling tasks. This derivative dataset demonstrates a calibration-free BCI approach using an encoding model that systematically reduces training data requirements, ultimately achieving high communication rates without any user-specific calibration data. The study validates neural encoding models as an alternative to traditional event-related potential templates for practical plug-and-play BCI applications.",
-  "methods_description": "EEG recorded at 512 Hz from 8 electrodes (Fpz, Iz, O1, O2, Oz, POz, T7, T8) using Biosemi ActiveTwo hardware with sintered Ag/AgCl active electrodes. Stimuli were luminance-modulated pseudo-random Gold codes (126-bit sequences) presented at 60 Hz on an iPad Pro. Offline experiment: 30 participants completed 5 blocks of 20 trials each using a 4×5 calculator grid. Online experiment: 11 participants used a keyboard layout with dynamic stopping rule. Data preprocessed with 2-30 Hz Butterworth filtering and downsampled to 120 Hz. Classification employed template-matching with reconvolution encoding model.",
-  "keywords": [
-    {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "electroencephalography"
-    },
-    {
-      "term": "evoked potentials"
-    },
-    {
-      "term": "code-modulated visual evoked potentials"
-    },
-    {
-      "term": "zero training"
-    },
-    {
-      "term": "encoding model"
-    },
-    {
-      "term": "BCI speller"
-    }
-  ],
-  "source_hash": "b79e3d70d9497d92e45f048eb6f54af9fc16dc941e0dbd11b39475c999b08643"
+  "source_hash": "30d15856367fb2184754a187267cacb98ff0170f999d9428e719309ed5ccb394"
 }
