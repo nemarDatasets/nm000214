@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "c-VEP dataset from Thielen et al. (2021)",
-  "description": "A code-modulated visual evoked potential (cVEP) brain-computer interface dataset from 30 healthy participants performing an offline BCI task with a calculator grid stimulus. This derivative dataset demonstrates a calibration-free approach that progressively reduces training data requirements while maintaining classification performance, ultimately achieving zero-training BCI operation through neural encoding models. The study validates the feasibility of plug-and-play BCI systems using only 8 non-invasive EEG electrodes.",
-  "methods_description": "EEG data acquired at 512 Hz from 8 electrodes (Fpz, Iz, O1, O2, Oz, POz, T7, T8) using Biosemi ActiveTwo hardware with sintered Ag/AgCl active electrodes. Stimuli consisted of luminance-modulated pseudo-random Gold code sequences (126-bit, 2.1 s duration) presented on an iPad Pro at 60 Hz. Offline experiment: 30 participants completed 5 blocks of 20 trials each (100 trials total, 31.5 s per trial) using a 4×5 calculator grid. Online experiment: 11 participants used a keyboard layout with dynamic stopping rule. Preprocessing included 2-30 Hz Butterworth filtering and downsampling to 120 Hz. Classification employed template-matching with reconvolution encoding model.",
+  "description": "A code-modulated visual evoked potential (cVEP) brain-computer interface dataset from 30 healthy participants performing an offline BCI task with a calculator grid stimulus. This derivative dataset demonstrates a calibration-free approach that progressively reduces training data requirements, ultimately achieving zero-training performance through neural encoding models while maintaining classification accuracy comparable to traditional event-related potential methods.",
+  "methods_description": "EEG data acquired at 512 Hz from 8 electrodes (Fpz, Iz, O1, O2, Oz, POz, T7, T8) using Biosemi ActiveTwo hardware with sintered Ag/AgCl active electrodes and CMS/DRL reference. Participants completed 5 blocks of 20 trials each (100 trials total) with 31.5 s trial duration, viewing luminance-modulated pseudo-random Gold code sequences (126-bit, 2.1 s duration) on a 4×5 calculator grid. Data preprocessed with 2-30 Hz Butterworth filtering and downsampled to 120 Hz. Classification employed template-matching with reconvolution encoding model decomposing responses into linear sums of individual event responses.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -20,7 +20,9 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "electroencephalography"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
       "term": "Evoked Potentials, Visual",
@@ -37,7 +39,7 @@
       "term": "encoding model"
     },
     {
-      "term": "spread spectrum communication"
+      "term": "reconvolution"
     }
   ],
   "related_identifiers": [
@@ -101,5 +103,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "374e6638548d79270cbe98bed5cf8ee7cb7da2677d05f8ba2fed74155b08dabc"
+  "source_hash": "4ae0405dc0cbedc701e93e1986452c12a9b3b2162992d8fbd18265095bfba2de"
 }
