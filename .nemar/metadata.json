@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "c-VEP dataset from Thielen et al. (2021)",
-  "description": "This dataset contains 8-channel EEG recordings from 30 healthy participants performing a code-modulated visual evoked potential (c-VEP) brain-computer interface task. Participants fixated on target cells in a 20-symbol calculator grid while all cells flashed with pseudo-random Gold code sequences. The data support work on reducing BCI calibration, from full training to zero training, using an encoding model based on reconvolution.",
-  "methods_description": "EEG was recorded at 512 Hz from 8 sintered Ag/AgCl active electrodes (Biosemi ActiveTwo). Each of 30 participants completed 5 blocks of 20 trials of 31.5 s each. Stimuli were luminance-modulated Gold codes (126 bits) shown on an iPad Pro at 60 Hz. Classification used template matching with a reconvolution encoding model.",
+  "description": "This dataset contains 8-channel EEG recordings from 30 healthy participants performing a code-modulated visual evoked potential (c-VEP) brain-computer interface task. Participants fixated on target cells in a 20-symbol grid while all cells flashed with pseudo-random Gold code sequences. The data support the development of calibration-free (zero-training) BCIs using a reconvolution-based encoding model, compared against traditional ERP template matching.",
+  "methods_description": "EEG was recorded at 512 Hz from 8 Ag/AgCl electrodes (Biosemi ActiveTwo) while 30 participants completed 5 blocks of 20 trials, each 31.5 s long. Stimuli were luminance-modulated 126-bit Gold codes presented on an iPad Pro at 60 Hz in a 4x5 calculator grid. Analysis used template-matching with a reconvolution encoding model under four training regimes, with 2-30 Hz band-pass filtering and downsampling to 120 Hz.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -21,14 +21,15 @@
     {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "code-modulated visual evoked potentials"
+      "term": "Evoked Potentials, Visual",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
     },
     {
-      "term": "c-VEP"
+      "term": "code-modulated visual evoked potentials"
     },
     {
       "term": "reconvolution"
@@ -98,5 +99,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "4ae0405dc0cbedc701e93e1986452c12a9b3b2162992d8fbd18265095bfba2de"
+  "source_hash": "232fac094e93dcfba040e48e11a55a3cd33673c47fa68c205cd7ab917f4317db"
 }
