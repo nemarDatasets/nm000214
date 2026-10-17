@@ -1,0 +1,5 @@
+1.0.6 2026-10-17
+  - sourcedata_provenance.json: corrected the subject label of 2 entries (the two shared resource files `resources/mgold_61_6521_flip_balanced_20.mat` (stimulus codes) and `resources/nt_cap8.loc` (electrode positions) were filed under subject 30).
+    resources/mgold_61_6521_flip_balanced_20.mat: 30 -> null
+    resources/nt_cap8.loc: 30 -> null
+    No data file added, changed or removed; the BIDS tree is unchanged.

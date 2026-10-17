@@ -15,13 +15,13 @@
    "file": "resources/mgold_61_6521_flip_balanced_20.mat",
    "bytes": 476,
    "sha256": "27cd80570fd9963a28e5ed9ae2b4ba8a828a137ba91d65107c7b62ad6dcacf22",
-   "subject": "30"
+   "subject": null
   },
   {
    "file": "resources/nt_cap8.loc",
    "bytes": 238,
    "sha256": "d9171e76f0b72167ed6e5d0abbc929d47cd7980c8d715366ea0de94f9e0ae0b2",
-   "subject": "30"
+   "subject": null
   },
   {
    "file": "offline/sub-01/block_1/sub-01_20181128_block_1_main_eeg.gdf",
@@ -1825,5 +1825,15 @@
   }
  ],
  "nested_sourcedata_collapsed": 300,
- "n_subjects_recorded": 30
+ "n_subjects_recorded": 30,
+ "revisions": [
+  {
+   "date": "2026-10-17",
+   "version": "1.0.6",
+   "added_files": 0,
+   "added_bytes": 0,
+   "note": "Subject labels corrected for 2 entries (the two shared resource files `resources/mgold_61_6521_flip_balanced_20.mat` (stimulus codes) and `resources/nt_cap8.loc` (electrode positions) were filed under subject 30). New labels follow moabb.datasets.Thielen2021: resources/mgold_61_6521_flip_balanced_20.mat 30 -> null; resources/nt_cap8.loc 30 -> null. No file added or changed.",
+   "subject_corrections": 2
+  }
+ ]
 }
